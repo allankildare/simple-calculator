@@ -1,11 +1,21 @@
 let value
 let result
+
 function button(num) {
     value = document.calc.display.value += num
 }
 
-function reset () {
+function reset() {
     document.calc.display.value = ''
+}
+
+function backspace() {
+    event.preventDefault()
+    value = document.calc.display.value
+    let array = value.split('')
+    array.pop()
+    let novoDisplay = array.join('')
+    document.calc.display.value = novoDisplay
 }
 
 document.getElementById('result').addEventListener('click', () => {

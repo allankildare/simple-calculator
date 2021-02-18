@@ -6,12 +6,16 @@
     <title>Calculadora</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.2.0/math.js" integrity="sha512-SewEag0kt1xsJdbfAXgLyLvYXeAoGEla4M6JSitT6ocJVI+VeUbFXkgrbloNn4cVgq46caRf31un2eoalq6YOw==" crossorigin="anonymous"></script>
     <script src="./app.js" type="text/javascript" defer></script>
+    <script src="https://kit.fontawesome.com/ea399319a5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <form action="" name="calc">
         <div id="calculator">
-            <input type="text" name="display" id="display">
+            <div class="inputs">
+                <input type="text" name="display" id="display">
+                <button onclick="backspace()"><i class="fas fa-backspace"></i></button>
+            </div>
             <div id="first">
                 <input type="button" value="7" class="button border" onclick="button(value)">
                 <input type="button" value="8" class="button border" onclick="button(value)">
