@@ -18,7 +18,9 @@ function backspace() {
     document.calc.display.value = novoDisplay
 }
 
-document.getElementById('result').addEventListener('click', () => {
+function resultado() {
     result = math.evaluate(value)
     document.calc.display.value = result.toLocaleString('pt-BR')
-})
+}
+
+document.getElementById("result").addEventListener("click", resultado)
