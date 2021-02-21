@@ -81,3 +81,19 @@ div#fourth input:nth-child(1) {
 div#fourth input:nth-child(3) {
     background-color: #43a3e8;
 }
+
+.animate-up {
+    animation-name: up;
+    animation-duration: .7s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes up {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    } to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
